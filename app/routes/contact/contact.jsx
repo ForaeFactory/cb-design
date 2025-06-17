@@ -15,7 +15,7 @@ import { cssProps, msToNum, numToMs } from '~/utils/style';
 import { baseMeta } from '~/utils/meta';
 import { useState } from 'react';
 import { Form, useActionData, useNavigation } from '@remix-run/react';
-import '@remix-run/cloudflare';
+import { json } from '@remix-run/cloudflare';
 import styles from './contact.module.css';
 import emailjs from '@emailjs/browser';
 
@@ -42,7 +42,7 @@ export async function action({ request }) {
 
 
   // Return without sending if a bot trips the honeypot
-  if (isBot) return response.json({ success: true });
+  if (isBot) return json({ success: true });
 
   // Handle input validation on the server
   if (!email || !EMAIL_PATTERN.test(email)) {
@@ -62,10 +62,10 @@ export async function action({ request }) {
   }
 
   if (Object.keys(errors).length > 0) {
-    return response.json({ errors });
+    return json({ errors });
   }
 
-  return response.json({ success: true });
+  return json({ success: true });
 
 }
 

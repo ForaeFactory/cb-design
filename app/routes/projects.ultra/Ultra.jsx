@@ -1,7 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 
-
-
 // Background Images
 import mulBackground from '~/assets/mulBackground.png';
 
@@ -11,8 +9,6 @@ import mulBottle1 from '~/assets/ultra/mulBottle1_2.png';
 import mulBottle2 from '~/assets/ultra/mulBottle2_2.png';
 
 // Filler and Closing Content Images
-import mulClose from '~/assets/ultra/mulclose.png';
-import mulFill1 from '~/assets/ultra/mulFill1.png';
 import mulFill2 from '~/assets/ultra/mulPGFill.png';
 import mulFill3 from '~/assets/ultra/mulFill3.png';
 
