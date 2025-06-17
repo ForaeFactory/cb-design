@@ -18,7 +18,7 @@ import styles from './profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="In a Nutshell..." start={visible} delay={500} />
+      In a Nutshell...
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       For 15 years, I've been the creative force behind bold identities and impactful campaigns

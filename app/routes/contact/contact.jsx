@@ -121,7 +121,6 @@ export const Contact = () => {
         {({ status, nodeRef }) => (
           <Form
             id="connectForm"
-            unstable_viewTransition
             className={styles.form}
             method="post"
             ref={form}
@@ -134,7 +133,7 @@ export const Contact = () => {
               as="h1"
               style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
             >
-              <DecoderText text="Say hello" start={status !== 'exited'} delay={300} />
+              Say Hello!
             </Heading>
             <Divider
               className={styles.divider}

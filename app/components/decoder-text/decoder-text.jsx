@@ -37,6 +37,7 @@ function shuffle(content, output, position) {
 
     if (position % 1 < 0.5) {
       const rand = Math.floor(Math.random() * glyphs.length);
+      console.log(rand);
       return { type: CharType.Glyph, value: glyphs[rand] };
     }
 

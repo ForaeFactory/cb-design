@@ -10,7 +10,7 @@ import remarkMdxFrontmatter from 'remark-mdx-frontmatter';
 import rehypeImgSize from 'rehype-img-size';
 import rehypeSlug from 'rehype-slug';
 import rehypePrism from '@mapbox/rehype-prism';
-import { vercelPreset } from '@vercel/remix/vite';
+import { netlifyPlugin } from "@netlify/remix-adapter/plugin";
 
 export default defineConfig({
   build: {
@@ -27,13 +27,21 @@ export default defineConfig({
     }),
     remixCloudflareDevProxy(),
     remix({
-      presets: [vercelPreset()],
+      future: {
+        v3_fetcherPersist: true,
+        v3_relativeSplatPath: true,
+        v3_throwAbortReason: true,
+        v3_singleFetch: true,
+        v3_lazyRouteDiscovery: true,
+      },
       routes(defineRoutes) {
         return defineRoutes(route => {
           route('/', 'routes/home/route.js', { index: true });
         });
       },
+
     }),
+    netlifyPlugin(),
     jsconfigPaths(),
   ],
 });

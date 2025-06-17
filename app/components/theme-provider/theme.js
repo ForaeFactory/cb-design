@@ -1,5 +1,6 @@
 import { pxToRem } from '~/utils/style';
 
+
 // Full list of tokens
 const baseTokens = {
   black: 'oklch(0% 0 0)',
@@ -12,7 +13,7 @@ const baseTokens = {
   durationXL: '800ms',
   systemFontStack:
     'system-ui, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Ubuntu, Helvetica Neue, sans-serif',
-  fontStack: `Gotham, var(--systemFontStack)`,
+  fontStack: `Poppins, var(--systemFontStack)`,
   monoFontStack:
     'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace',
   japaneseFontStack:
