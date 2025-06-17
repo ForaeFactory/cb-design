@@ -3,6 +3,6 @@
 </p>
 <h1 align="center">Personal portfolio</h1>
 
-[![Site preview](/public/site-preview.png)](https://hamishw.com)
+[![Site preview](/public/site-preview.png)]
 
 My design portfolio to showcase a few projects.
