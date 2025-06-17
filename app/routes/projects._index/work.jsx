@@ -28,7 +28,7 @@ import blsImg from '~/assets/blsPlace.png';
 import khImg from '~/assets/khBackground.png';
 
 // Video Imports
-import budVid from '~/assets/bud/Bud_BeAKing-Teaser.mp4';
+import budVid from '~/assets/bud/BeAKing-Teaser.mp4';
 import khVid from '~/assets/khc/KHDR_Exp.mp4';
 
 const linkLabel = 'View Project';

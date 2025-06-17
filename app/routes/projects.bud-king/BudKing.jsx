@@ -20,7 +20,7 @@ import budCulture3 from '~/assets/bud/BudCulture2.png';
 import budCulture4 from '~/assets/bud/BudCulture3.png';
 
 // Video Content
-import budVideo from '~/assets/bud/Bud_BeAKing-Teaser.mp4';
+import budVideo from '~/assets/bud/BeAKing-Teaser.mp4';
 
 // Filler Content
 import budFill1 from '~/assets/bud/BudFill1.png';
